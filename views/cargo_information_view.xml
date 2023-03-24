@@ -177,8 +177,8 @@
                                 </group>
                             </group>
                         </page>
-                        <page string="Acente Bilgisi" name="agency_information">
-                            <field name="agency_information">
+                        <page string="Acente Bilgisi" name="agency_info" attrs="{'invisible': [('type_of_transport', '!=', 'forwardie')]}">
+                            <field name="agency_information" >
                                 <tree editable="bottom">
                                     <field name="name"/>
                                     <field name="address"/>

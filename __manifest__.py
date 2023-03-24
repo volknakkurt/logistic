@@ -15,6 +15,8 @@
         'fleet',
         'product',
         'hr_contract',
+        'stock',
+        'mrp',
     ],
     'data': [
         'security/ir.model.access.csv',

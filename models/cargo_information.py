@@ -129,32 +129,41 @@ class CargoSearch(models.Model):
     def generate_cmr_report(self):
         self.ensure_one()
         [data] = self.read()
+        data['emp'] = self.env.context.get('active_ids', [])
+        track_number = str(data['file'][1])
         _logger.info('*****************************************************************************')
         _logger.info(str(data))
+        _logger.info(str(data['emp']))
+        _logger.info(track_number)
         _logger.info(self.env['cargo.information'].browse(data['file']))
         datas = {
             'ids': [],
             'model': 'cargo.information.search',
             'form': data
         }
-        return self.env.ref('om_logistic.cargo_cmr_report').report_action(self.env['cargo.information'].browse(data['file']), data=datas)
+        return self.env.ref('om_logistic.cargo_cmr_report').report_action(self.env['cargo.information'].search([('tracking_number', '=', track_number)])
+, data=datas)
 
     def generate_declaration_report(self):
         self.ensure_one()
         [data] = self.read()
+        track_number = str(data['file'][1])
         datas = {
             'ids': [],
             'model': 'cargo.information.search',
             'form': data
         }
-        return self.env.ref('om_logistic.cargo_declaration_report').report_action(self.env['cargo.information'].browse(data['file']), data=datas)
+        return self.env.ref('om_logistic.cargo_declaration_report').report_action(self.env['cargo.information'].search([('tracking_number', '=', track_number)])
+, data=datas)
 
     def generate_miscellaneous_report(self):
         self.ensure_one()
         [data] = self.read()
+        track_number = str(data['file'][1])
         datas = {
             'ids': [],
             'model': 'cargo.information.search',
             'form': data
         }
-        return self.env.ref('om_logistic.cargo_miscellaneous_report').report_action(self.env['cargo.information'].browse(data['file']), data=datas)
+        return self.env.ref('om_logistic.cargo_miscellaneous_report').report_action(self.env['cargo.information'].search([('tracking_number', '=', track_number)])
+, data=datas)

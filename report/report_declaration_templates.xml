@@ -11,7 +11,8 @@
                     </group>
                 </group>
                 <footer>
-                    <button name="generate_declaration_report" string="Beyanname Raporu Oluştur" type="object" class="btn-primary"/>
+                    <button name="generate_declaration_report" string="Beyanname Raporu Oluştur" type="object"
+                            class="btn-primary"/>
                 </footer>
             </form>
         </field>
@@ -31,18 +32,10 @@
         <t t-call="web.html_container">
             <t t-call="web.external_layout">
                 <div class="page">
-                    <head>
-                        <meta charset="utf-8"/>
-                        <title>Declaration Raporu</title>
-                    </head>
-                    <body>
-                        <thead>
-
-                        </thead>
-                        <tbody>
-                            <tspan> Deneme </tspan>
-                        </tbody>
-                    </body>
+                    <div class="page">
+                        <t t-foreach="docs" t-as="o">
+                        </t>
+                    </div>
                 </div>
             </t>
         </t>
