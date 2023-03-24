@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_cargo_miscellaneous_report" model="ir.ui.view">
+        <field name="name">cargo.information.report.view.form</field>
+        <field name="model">cargo.information.search</field>
+        <field name="arch" type="xml">
+            <form string="Miscellaneous Raporu">
+                <group>
+                    <group>
+                        <field name="file"/>
+                    </group>
+                </group>
+                <footer>
+                    <button name="generate_miscellaneous_report" string="Çeşitli Raporu Oluştur" type="object" class="btn-primary"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_miscellaneous_report" model="ir.actions.act_window">
+        <field name="name">Print Miscellaneous Report</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">cargo.information.search</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="view_cargo_miscellaneous_report"/>
+        <field name="target">new</field>
+        <field name="context">{}</field>
+    </record>
+
+    <template id="report_miscellaneous_templates">
+        <t t-call="web.html_container">
+            <t t-call="web.external_layout">
+                <div class="page">
+                    <head>
+                        <meta charset="utf-8"/>
+                        <title>Miscellaneous Raporu</title>
+                    </head>
+                    <body>
+                        <thead>
+
+                        </thead>
+                        <tbody>
+                            <tspan> Deneme </tspan>
+                        </tbody>
+                    </body>
+                </div>
+            </t>
+        </t>
+    </template>
+</odoo>

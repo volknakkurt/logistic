@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_cargo_information_tree" model="ir.ui.view">
+        <field name="name">cargo.information.tree</field>
+        <field name="model">cargo.information</field>
+        <field name="arch" type="xml">
+            <tree sample="1">
+                <field name="sender_name"/>
+                <field name="recipient_name"/>
+                <field name="start_date" optional="hide"/>
+                <field name="guess_date"/>
+                <field name="type_of_transport"/>
+                <field name="tracking_number"/>
+                <field name="cargo_waybill_number" optional="hide"/>
+                <field name="state" decoration-muted="state == 'draft'"
+                       decoration-success="state == 'invoiced'"
+                       decoration-primary="state == 'to_approve'"
+                       decoration-bf="state == 'approved'"
+                       decoration-warning="state == 'on_the_way'"
+                       decoration-info="state == 'delivered'"
+                       decoration-danger="state == 'cancel'"
+                       widget="badge" string="Status"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_cargo_information_search" model="ir.ui.view">
+        <field name="name">cargo.information.search</field>
+        <field name="model">cargo.information</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="sender_name" string="Sender Name"/>
+                <field name="recipient_name"/>
+                <field name="state"/>
+                <field name="type_of_transport"/>
+                <separator/>
+                <filter name="filter_archive" string="Archive" domain="[('active','=',False)]"/>
+                <group expand="0" string="Group By">
+                    <filter string="Archive" name="group_by_archive" context="{'group_by':'active'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="view_cargo_information_form" model="ir.ui.view">
+        <field name="name">cargo.information.form</field>
+        <field name="model">cargo.information</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+
+                    <field name="state" widget="statusbar" nolabel="1"/>
+                </header>
+                <sheet>
+                    <div class="oe_title">
+                        <h1>
+                            <field name="priority" widget="priority" class="mr-3"/>
+                        </h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="creator"/>
+                            <field name="sender_name"/>
+                            <field name="recipient_name"/>
+                            <field name="type_of_transport"/>
+                        </group>
+                        <group>
+                            <field name="operations_officer"/>
+                            <field name="responsible_dep_officer"/>
+                            <field name="sales_representative"/>
+                            <field name="customer_representative"/>
+                        </group>
+                    </group>
+                    <group>
+                        <group>
+                            <field name="uploaded_address"/>
+                            <field name="address_tobe_delivered"/>
+                        </group>
+                        <group>
+                            <field name="trade_type" widget="selection_badge"/>
+                            <field name="exporting_country"
+                                   attrs="{'invisible': [('trade_type', '!=', 'export')]}"/>
+                            <field name="importer_country"
+                                   attrs="{'invisible': [('trade_type', '!=', 'import')]}"/>
+                        </group>
+                    </group>
+                    <group>
+                        <group>
+                            <field name="start_date"/>
+                        </group>
+                        <group>
+                            <field name="guess_date"/>
+                        </group>
+                        <group>
+                            <field name="finish_date"/>
+                        </group>
+                    </group>
+                    <group>
+                        <field name="tracking_number"/>
+                        <field name="cargo_waybill_number"/>
+                    </group>
+                    <notebook>
+                        <page string="Product" name="product_line_ids">
+                            <group>
+                                <field name="product_line_ids">
+                                    <tree editable="top">
+                                        <field name="id"/>
+                                        <field name="name"/>
+                                        <field name="length"/>
+                                        <field name="width"/>
+                                        <field name="height"/>
+                                        <field name="barcode"/>
+                                        <field name="list_price"/>
+                                        <field name="standard_price"/>
+                                    </tree>
+                                    <form editable="top">
+                                        <field name="id"/>
+                                        <field name="name"/>
+                                        <field name="length"/>
+                                        <field name="width"/>
+                                        <field name="height"/>
+                                        <field name="barcode"/>
+                                        <field name="list_price"/>
+                                        <field name="standard_price"/>
+                                    </form>
+                                </field>
+                            </group>
+                            <group>
+                                <field name="explanation" nolabel="1"
+                                       placeholder="Define your terms and conditions ..."/>
+                            </group>
+                        </page>
+                        <page string="Gümrük Bilgileri" name="customs_line_ids">
+                            <group>
+                                <field name="out_customs_line_ids">
+                                    <tree editable="bottom">
+                                        <field name="reference" string="Referans"/>
+                                        <field name="customs_name"/>
+                                        <field name="customs_code"/>
+                                        <field name="exit_gate" string="Gümrük Çıkış Kapısı"/>
+                                    </tree>
+                                    <form>
+                                        <header>
+                                            <field name="reference" string="Referans"/>
+                                        </header>
+                                        <field name="customs_name"/>
+                                        <field name="customs_code"/>
+                                        <field name="exit_gate"/>
+                                    </form>
+                                </field>
+                            </group>
+                            <group>
+                                <field name="arrival_customs_line_ids">
+                                    <tree editable="bottom">
+                                        <field name="customs_name"/>
+                                        <field name="customs_code"/>
+                                        <field name="exit_gate" string="Gümrük Varış Kapısı"/>
+                                    </tree>
+                                    <form>
+                                        <field name="customs_name"/>
+                                        <field name="customs_code"/>
+                                        <field name="exit_gate"/>
+                                    </form>
+                                </field>
+                            </group>
+
+                        </page>
+                        <page string="Araç ve Şoför Bilgisi" name="vehicle">
+                            <group>
+                                <group>
+                                    <field name="vehicle"/>
+                                    <field name="towing_plate"/>
+                                    <field name="trailer_plate" placeholder="Dorse Plakasını Gir."/>
+                                </group>
+                                <group>
+                                    <field name="driver"/>
+                                </group>
+                            </group>
+                        </page>
+                        <page string="Acente Bilgisi" name="agency_information">
+                            <field name="agency_information">
+                                <tree editable="bottom">
+                                    <field name="name"/>
+                                    <field name="address"/>
+                                    <field name="phone"/>
+                                    <field name="website"/>
+                                    <field name="email"/>
+                                    <field name="business_type"/>
+                                </tree>
+                                <form>
+                                    <group>
+                                        <field name="name"/>
+                                        <field name="address"/>
+                                        <field name="phone"/>
+                                    </group>
+                                    <group>
+                                        <field name="website"/>
+                                        <field name="email"/>
+                                        <field name="business_type"/>
+                                    </group>
+                                </form>
+                            </field>
+                        </page>
+                        <page string="Fatura" name="invoice_line_ids">
+                            <group>
+                                <group>
+                                    <field name="invoice_line_ids"/>
+                                </group>
+                            </group>
+                        </page>
+                    </notebook>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" groups="base.group_user"/>
+                    <field name="activity_ids"/>
+                    <field name="message_ids"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+
+</odoo>

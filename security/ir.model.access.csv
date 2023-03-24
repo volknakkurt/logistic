@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access.cargo.information,access_cargo_information,model_cargo_information,base.group_user,1,1,1,1
+access.cargo.information.search,access_cargo_information_search,model_cargo_information_search,base.group_user,1,1,1,1
+access.agency.information,access_agency_information,model_agency_information,base.group_user,1,1,1,1
+access.customs,access_customs,model_customs,base.group_user,1,1,1,1
+access.trailer,access_trailer,model_trailer,base.group_user,1,1,1,1

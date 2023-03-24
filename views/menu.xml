@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="action_cargo_information" model="ir.actions.act_window">
+        <field name="name">Dosya Kayıt</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">cargo.information</field>
+        <field name="view_mode">tree,form</field>
+        <field name="context">{}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create your first cargo!
+            </p>
+        </field>
+    </record>
+
+    <record id="action_highway_information" model="ir.actions.act_window">
+        <field name="name">Karayolu</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">cargo.information</field>
+        <field name="view_mode">tree,form</field>
+        <field name="context">{'search_default_type_of_transport' : 'highway'}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create your first cargo!
+            </p>
+        </field>
+    </record>
+    <record id="action_seaway_information" model="ir.actions.act_window">
+        <field name="name">Denizyolu</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">cargo.information</field>
+        <field name="view_mode">tree,form</field>
+        <field name="context">{'search_default_type_of_transport' : 'seaway'}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create your first cargo!
+            </p>
+        </field>
+    </record>
+    <record id="action_airway_information" model="ir.actions.act_window">
+        <field name="name">Havayolu</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">cargo.information</field>
+        <field name="view_mode">tree,form</field>
+        <field name="context">{'search_default_type_of_transport' : 'airway'}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create your first cargo!
+            </p>
+        </field>
+    </record>
+    <record id="action_railway_information" model="ir.actions.act_window">
+        <field name="name">Demiryolu</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">cargo.information</field>
+        <field name="view_mode">tree,form</field>
+        <field name="context">{'search_default_type_of_transport' : 'railway'}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create your first cargo!
+            </p>
+        </field>
+    </record>
+    <record id="action_forwardie_information" model="ir.actions.act_window">
+        <field name="name">Forwardie</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">cargo.information</field>
+        <field name="view_mode">tree,form</field>
+        <field name="context">{'search_default_type_of_transport' : 'forwardie'}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create your first cargo!
+            </p>
+        </field>
+    </record>
+
+<!--     Tanımlamar alanındaki ir.actions.act_window kodları-->
+
+    <record id="action_contacts_tree" model="ir.actions.act_window">
+        <field name="name">Müşteriler</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">hr.contract</field>
+        <field name="view_mode">tree,form</field>
+        <field name="context">{}</field>
+        <field name="search_view_id" ref="hr_contract.hr_contract_view_search"/>
+        <field name="view_id" ref="hr_contract.hr_contract_view_tree"/>
+    </record>
+
+    <record id="action_employees_tree" model="ir.actions.act_window">
+        <field name="name">Sürücüler</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">hr.employee</field>
+        <field name="view_mode">tree,form</field>
+        <field name="context">{}</field>
+        <field name="search_view_id" ref="hr.view_employee_filter"/>
+        <field name="view_id" ref="hr.view_employee_tree"/>
+    </record>
+
+    <record id="action_customs_information" model="ir.actions.act_window">
+        <field name="name">Gümrük Bilgileri</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">customs</field>
+        <field name="view_mode">tree,form</field>
+        <field name="context">{}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                İlk Gümrük Şablon Bilgilerini Gir!
+            </p>
+        </field>
+    </record>
+
+<!--    Faturalar alanındaki ir.actions.act_window kodları-->
+
+    <record id="action_account_move_invoices" model="ir.actions.act_window">
+        <field name="name">Faturalar</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">account.move</field>
+        <field name="view_mode">tree,form</field>
+        <field name="context">{}</field>
+        <field name="search_view_id" ref="account.view_account_move_filter"/>
+        <field name="view_id" ref="account.view_invoice_tree"/>
+    </record>
+
+<!--    Menüler-->
+
+    <menuitem id="menu_logistic_root"
+              name="Logistic"
+              web_icon="logistic,static/description/icon.png"
+              sequence="0"/>
+
+    <menuitem id="menu_tracking_record_master"
+              name="Takip/Kayıt"
+              parent="menu_logistic_root"
+              sequence="10"/>
+    <menuitem id="menu_contacts_master"
+              name="Tanımlamalar"
+              parent="menu_logistic_root"
+              sequence="20"/>
+    <menuitem id="menu_fleet_management_master"
+              name="Filo Yönetimi"
+              parent="menu_logistic_root"
+              sequence="40"/>
+    <menuitem id="menu_stock_management_master"
+              name="Depo Yönetimi"
+              parent="menu_logistic_root"
+              sequence="50"/>
+    <menuitem id="menu_sales_management_master"
+              name="Satış Yömetimi"
+              parent="menu_logistic_root"
+              sequence="60"/>
+    <menuitem id="menu_invoicing_management_master"
+              name="Faturalar"
+              parent="menu_logistic_root"
+              sequence="70"/>
+    <menuitem id="menu_report_management_master"
+              name="Raporlar"
+              parent="menu_logistic_root"
+              sequence="80"/>
+
+    <!--    Takip/Kayıt alt menüleri-->
+
+    <menuitem id="menu_tracking_record_information"
+              name="Kayıtları Listele"
+              action="action_cargo_information"
+              parent="menu_tracking_record_master"
+              sequence="10"/>
+    <menuitem id="menu_highway_information"
+              name="Karayolu"
+              action="action_highway_information"
+              parent="menu_tracking_record_master"
+              sequence="20"/>
+    <menuitem id="menu_seaway_information"
+              name="Denizyolu"
+              action="action_seaway_information"
+              parent="menu_tracking_record_master"
+              sequence="30"/>
+    <menuitem id="menu_airline_information"
+              name="Havayolu"
+              action="action_airway_information"
+              parent="menu_tracking_record_master"
+              sequence="40"/>
+    <menuitem id="menu_railway_information"
+              name="Demiryolu"
+              action="action_railway_information"
+              parent="menu_tracking_record_master"
+              sequence="50"/>
+    <menuitem id="menu_forwardie_information"
+              name="Forwardie"
+              action="action_forwardie_information"
+              parent="menu_tracking_record_master"
+              sequence="60"/>
+
+    <!--    Tanımlama Alt Menüleri-->
+
+    <menuitem id="menu_contacts_information"
+              name="Müşteriler"
+              action="action_contacts_tree"
+              parent="menu_contacts_master"
+              sequence="10"/>
+    <menuitem id="menu_driver_information"
+              name="Şoförler"
+              action="action_employees_tree"
+              parent="menu_contacts_master"
+              sequence="20"/>
+    <menuitem id="menu_out_customs_information"
+              name="Gümrük Bilgileri"
+              action="action_customs_information"
+              parent="menu_contacts_master"
+              sequence="30"/>
+
+    <!--    Filo Yönetimi Alt Menüleri-->
+
+    <menuitem id="menu_vehicle_information"
+              name="Araçlar"
+              action="fleet.fleet_vehicle_action"
+              parent="menu_fleet_management_master"
+              sequence="10"/>
+    <menuitem id="menu__rental_vehicle_information"
+              name="Kiralık Araçlar"
+              action="fleet.fleet_vehicle_action"
+              parent="menu_fleet_management_master"
+              sequence="20"/>
+
+    <!--    Depo Yönetimi Alt Menüleri-->
+
+    <menuitem id="menu_warehouse_information"
+              name="Depo Yönetimi"
+              action="stock.action_warehouse_form"
+              parent="menu_stock_management_master"
+              sequence="10"/>
+    <menuitem id="menu_stock_information"
+              name="Stok"
+              action="product.product_template_action"
+              parent="menu_stock_management_master"
+              sequence="20"/>
+    <menuitem id="menu_manufacturing_information"
+              name="Üretim"
+              action="mrp.mrp_production_action"
+              parent="menu_stock_management_master"
+              sequence="30"/>
+
+    <!--    Satış Yönetimi Alt Menüleri-->
+
+    <menuitem id="menu_sales_information"
+              name="Satış"
+              action="sale.action_orders"
+              parent="menu_sales_management_master"
+              sequence="10"/>
+
+    <!--    Faturalar Alt Menüleri-->
+
+    <menuitem id="menu_invoice_information"
+              name="Faturalar"
+              action="action_account_move_invoices"
+              parent="menu_invoicing_management_master"
+              sequence="10"/>
+    <menuitem id="menu_waiting_payment_information"
+              name="Ödeme Bekleyen"
+              action="action_account_move_invoices"
+              parent="menu_invoicing_management_master"
+              sequence="20"/>
+    <menuitem id="menu_upcoming_payment_information"
+              name="Ödemesi Yaklaşan"
+              action="action_account_move_invoices"
+              parent="menu_invoicing_management_master"
+              sequence="30"/>
+
+    <!--    Raporlar Alt Menüleri-->
+
+    <menuitem id="menu_cmr_report"
+              name="CMR"
+              action="action_print_cmr_report"
+              parent="menu_report_management_master"
+              sequence="10"/>
+    <menuitem id="menu_declaration_report"
+              name="Beyanname"
+              action="action_print_declaration_report"
+              parent="menu_report_management_master"
+              sequence="20"/>
+    <menuitem id="menu_miscellaneous_report"
+              name="Çeşitli"
+              action="action_miscellaneous_report"
+              parent="menu_report_management_master"
+              sequence="30"/>
+
+    <record id="cargo_cmr_report" model="ir.actions.report">
+        <field name="name">Print CMR Report</field>
+        <field name="model">cargo.information.search</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">om_logistic.action_print_cmr_report</field>
+        <field name="report_file">om_logistic.action_print_cmr_report</field>
+        <field name="binding_model_id" ref="model_cargo_information"/>
+        <field name="binding_type">report</field>
+    </record>
+
+    <record id="cargo_declaration_report" model="ir.actions.report">
+        <field name="name">Print Declaration Report</field>
+        <field name="model">cargo.information</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">om_logistic.action_print_declaration_report</field>
+        <field name="report_file">om_logistic.action_print_declaration_report</field>
+        <field name="binding_model_id" ref="model_cargo_information"/>
+        <field name="binding_type">report</field>
+    </record>
+
+    <record id="cargo_miscellaneous_report" model="ir.actions.report">
+        <field name="name">Print Miscellaneous Report</field>
+        <field name="model">cargo.information</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">om_logistic.action_miscellaneous_report</field>
+        <field name="report_file">om_logistic.action_miscellaneous_report</field>
+        <field name="binding_model_id" ref="model_cargo_information"/>
+        <field name="binding_type">report</field>
+    </record>
+
+</odoo>
