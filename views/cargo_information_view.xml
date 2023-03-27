@@ -5,10 +5,9 @@
         <field name="model">cargo.information</field>
         <field name="arch" type="xml">
             <tree sample="1">
-                <field name="sender_name"/>
-                <field name="recipient_name"/>
+                <field name="sender_name_id"/>
+                <field name="recipient_name_id"/>
                 <field name="start_date" optional="hide"/>
-                <field name="guess_date"/>
                 <field name="type_of_transport"/>
                 <field name="tracking_number"/>
                 <field name="cargo_waybill_number" optional="hide"/>
@@ -20,6 +19,8 @@
                        decoration-info="state == 'delivered'"
                        decoration-danger="state == 'cancel'"
                        widget="badge" string="Status"/>
+                <field name="driver_id"/>
+                <field name="vehicle_id"/>
             </tree>
         </field>
     </record>
@@ -29,15 +30,23 @@
         <field name="model">cargo.information</field>
         <field name="arch" type="xml">
             <search>
-                <field name="sender_name" string="Sender Name"/>
-                <field name="recipient_name"/>
+                <field name="sender_name_id" string="Sender Name"/>
+                <field name="recipient_name_id"/>
                 <field name="state"/>
                 <field name="type_of_transport"/>
                 <separator/>
                 <filter name="filter_archive" string="Archive" domain="[('active','=',False)]"/>
                 <group expand="0" string="Group By">
                     <filter string="Archive" name="group_by_archive" context="{'group_by':'active'}"/>
+                    <filter string="Karayolu" name="group_by_archive" context="{'type_of_transport':'highway'}"/>
+                    <filter string="Denizyolu" name="group_by_archive" context="{'type_of_transport':'seaway'}"/>
+                    <filter string="Havayolu" name="group_by_archive" context="{'type_of_transport':'airway'}"/>
+                    <filter string="Demiryolu" name="group_by_archive" context="{'type_of_transport':'railway'}"/>
+                    <filter string="Forwarder" name="group_by_archive" context="{'type_of_transport':'forwarder'}"/>
                 </group>
+                <searchpanel>
+                    <field name="type_of_transport" enable_counters="1" icon="fa-random"/>
+                </searchpanel>
             </search>
         </field>
     </record>
@@ -48,7 +57,20 @@
         <field name="arch" type="xml">
             <form>
                 <header>
-
+                    <button name="action_draft" string="Taslağa Sıfırla" type="object" class="oe_highlight"
+                            attrs="{'invisible': ['|', ('state', '=', 'action_approved'), ('state', '=', 'action_on_the_way')]}"/>
+                    <button name="action_to_approve" string="Onay Aşamasında" type="object" class="oe_highlight"
+                            attrs="{'invisible': [('state', '!=', 'draft')]}"/>
+                    <button name="action_approved" string="Onaylandı" type="object" class="oe_highlight"
+                            attrs="{'invisible': [('state', '!=', 'to_approve')]}"/>
+                    <button name="action_on_the_way" string="Yolda" type="object" class="oe_highlight"
+                            attrs="{'invisible': [('state', '!=', 'approved')]}"/>
+                    <button name="action_delivered" string="Teslim Edildi" type="object" class="oe_highlight"
+                            attrs="{'invisible': [('state', '!=', 'on_the_way')]}"/>
+                    <button name="action_invoiced" string="Faturalandı" type="object" class="oe_highlight"
+                            attrs="{'invisible': [('state', 'not in', ['delivered','on_the_way','to_approve'])]}"/>
+                    <button name="action_cancel" string="İptal Et" type="object" class="oe_highlight"
+                            attrs="{'invisible': [('state', 'not in', ['draft','to_approve'])]}"/>
                     <field name="state" widget="statusbar" nolabel="1"/>
                 </header>
                 <sheet>
@@ -59,16 +81,16 @@
                     </div>
                     <group>
                         <group>
-                            <field name="creator"/>
-                            <field name="sender_name"/>
-                            <field name="recipient_name"/>
+                            <field name="creator_id"/>
+                            <field name="sender_name_id"/>
+                            <field name="recipient_name_id"/>
                             <field name="type_of_transport"/>
                         </group>
                         <group>
-                            <field name="operations_officer"/>
-                            <field name="responsible_dep_officer"/>
-                            <field name="sales_representative"/>
-                            <field name="customer_representative"/>
+                            <field name="operations_officer_id"/>
+                            <field name="responsible_dep_officer_id"/>
+                            <field name="sales_representative_id"/>
+                            <field name="customer_representative_id"/>
                         </group>
                     </group>
                     <group>
@@ -78,9 +100,9 @@
                         </group>
                         <group>
                             <field name="trade_type" widget="selection_badge"/>
-                            <field name="exporting_country"
+                            <field name="exporting_country_id"
                                    attrs="{'invisible': [('trade_type', '!=', 'export')]}"/>
-                            <field name="importer_country"
+                            <field name="importer_country_id"
                                    attrs="{'invisible': [('trade_type', '!=', 'import')]}"/>
                         </group>
                     </group>
@@ -106,9 +128,7 @@
                                     <tree editable="top">
                                         <field name="id"/>
                                         <field name="name"/>
-                                        <field name="length"/>
-                                        <field name="width"/>
-                                        <field name="height"/>
+                                        <field name="case"/>
                                         <field name="barcode"/>
                                         <field name="list_price"/>
                                         <field name="standard_price"/>
@@ -116,14 +136,15 @@
                                     <form editable="top">
                                         <field name="id"/>
                                         <field name="name"/>
-                                        <field name="length"/>
-                                        <field name="width"/>
-                                        <field name="height"/>
+                                        <field name="case"/>
                                         <field name="barcode"/>
                                         <field name="list_price"/>
                                         <field name="standard_price"/>
                                     </form>
                                 </field>
+                            </group>
+                            <group>
+                                <field name="total_case"/>
                             </group>
                             <group>
                                 <field name="explanation" nolabel="1"
@@ -132,7 +153,7 @@
                         </page>
                         <page string="Gümrük Bilgileri" name="customs_line_ids">
                             <group>
-                                <field name="out_customs_line_ids">
+                                <field name="out_customs_line_id">
                                     <tree editable="bottom">
                                         <field name="reference" string="Referans"/>
                                         <field name="customs_name"/>
@@ -150,7 +171,7 @@
                                 </field>
                             </group>
                             <group>
-                                <field name="arrival_customs_line_ids">
+                                <field name="arrival_customs_line_id">
                                     <tree editable="bottom">
                                         <field name="customs_name"/>
                                         <field name="customs_code"/>
@@ -168,17 +189,18 @@
                         <page string="Araç ve Şoför Bilgisi" name="vehicle">
                             <group>
                                 <group>
-                                    <field name="vehicle"/>
+                                    <field name="vehicle_id"/>
                                     <field name="towing_plate"/>
-                                    <field name="trailer_plate" placeholder="Dorse Plakasını Gir."/>
+                                    <field name="trailer_plate_id" placeholder="Dorse Plakasını Gir."/>
                                 </group>
                                 <group>
-                                    <field name="driver"/>
+                                    <field name="driver_id"/>
                                 </group>
                             </group>
                         </page>
-                        <page string="Acente Bilgisi" name="agency_info" attrs="{'invisible': [('type_of_transport', '!=', 'forwardie')]}">
-                            <field name="agency_information" >
+                        <page string="Acente Bilgisi" name="agency_info"
+                              attrs="{'invisible': [('type_of_transport', '!=', 'forwarder')]}">
+                            <field name="agency_information_id">
                                 <tree editable="bottom">
                                     <field name="name"/>
                                     <field name="address"/>

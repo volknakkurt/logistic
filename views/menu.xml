@@ -12,61 +12,12 @@
             </p>
         </field>
     </record>
-
-    <record id="action_highway_information" model="ir.actions.act_window">
-        <field name="name">Karayolu</field>
+    <record id="action_forwarder_information" model="ir.actions.act_window">
+        <field name="name">Forwarder</field>
         <field name="type">ir.actions.act_window</field>
         <field name="res_model">cargo.information</field>
         <field name="view_mode">tree,form</field>
-        <field name="context">{'search_default_type_of_transport' : 'highway'}</field>
-        <field name="help" type="html">
-            <p class="o_view_nocontent_smiling_face">
-                Create your first cargo!
-            </p>
-        </field>
-    </record>
-    <record id="action_seaway_information" model="ir.actions.act_window">
-        <field name="name">Denizyolu</field>
-        <field name="type">ir.actions.act_window</field>
-        <field name="res_model">cargo.information</field>
-        <field name="view_mode">tree,form</field>
-        <field name="context">{'search_default_type_of_transport' : 'seaway'}</field>
-        <field name="help" type="html">
-            <p class="o_view_nocontent_smiling_face">
-                Create your first cargo!
-            </p>
-        </field>
-    </record>
-    <record id="action_airway_information" model="ir.actions.act_window">
-        <field name="name">Havayolu</field>
-        <field name="type">ir.actions.act_window</field>
-        <field name="res_model">cargo.information</field>
-        <field name="view_mode">tree,form</field>
-        <field name="context">{'search_default_type_of_transport' : 'airway'}</field>
-        <field name="help" type="html">
-            <p class="o_view_nocontent_smiling_face">
-                Create your first cargo!
-            </p>
-        </field>
-    </record>
-    <record id="action_railway_information" model="ir.actions.act_window">
-        <field name="name">Demiryolu</field>
-        <field name="type">ir.actions.act_window</field>
-        <field name="res_model">cargo.information</field>
-        <field name="view_mode">tree,form</field>
-        <field name="context">{'search_default_type_of_transport' : 'railway'}</field>
-        <field name="help" type="html">
-            <p class="o_view_nocontent_smiling_face">
-                Create your first cargo!
-            </p>
-        </field>
-    </record>
-    <record id="action_forwardie_information" model="ir.actions.act_window">
-        <field name="name">Forwardie</field>
-        <field name="type">ir.actions.act_window</field>
-        <field name="res_model">cargo.information</field>
-        <field name="view_mode">tree,form</field>
-        <field name="context">{'search_default_type_of_transport' : 'forwardie'}</field>
+        <field name="context">{'search_default_type_of_transport' : 'forwarder'}</field>
         <field name="help" type="html">
             <p class="o_view_nocontent_smiling_face">
                 Create your first cargo!
@@ -109,6 +60,25 @@
         </field>
     </record>
 
+<!--    Araçlar Alanındaki ir.actions.act_window kodları-->
+
+    <record id='fleet_vehicle_action' model='ir.actions.act_window'>
+        <field name="name">Kiralık Araçlar</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">fleet.vehicle</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="fleet.fleet_vehicle_view_tree"/>
+        <field name="context">{'search_default_is_rented' : True}</field>
+    </record>
+    <record id='fleet_vehicle_inherit_action' model='ir.actions.act_window'>
+        <field name="name">Kiralık Araçlar</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">fleet.vehicle</field>
+        <field name="view_mode">tree,form</field>
+        <field name="context">{'search_default_is_rented' : True}</field>
+        <field name="view_id" ref="fleet_vehicle_view_tree_inherit"/>
+    </record>
+
 <!--    Faturalar alanındaki ir.actions.act_window kodları-->
 
     <record id="action_account_move_invoices" model="ir.actions.act_window">
@@ -124,7 +94,7 @@
 <!--    Menüler-->
 
     <menuitem id="menu_logistic_root"
-              name="Logistic"
+              name="Lojistik"
               web_icon="logistic,static/description/icon.png"
               sequence="0"/>
 
@@ -164,29 +134,9 @@
               action="action_cargo_information"
               parent="menu_tracking_record_master"
               sequence="10"/>
-    <menuitem id="menu_highway_information"
-              name="Karayolu"
-              action="action_highway_information"
-              parent="menu_tracking_record_master"
-              sequence="20"/>
-    <menuitem id="menu_seaway_information"
-              name="Denizyolu"
-              action="action_seaway_information"
-              parent="menu_tracking_record_master"
-              sequence="30"/>
-    <menuitem id="menu_airline_information"
-              name="Havayolu"
-              action="action_airway_information"
-              parent="menu_tracking_record_master"
-              sequence="40"/>
-    <menuitem id="menu_railway_information"
-              name="Demiryolu"
-              action="action_railway_information"
-              parent="menu_tracking_record_master"
-              sequence="50"/>
-    <menuitem id="menu_forwardie_information"
-              name="Forwardie"
-              action="action_forwardie_information"
+    <menuitem id="menu_forwarder_information"
+              name="Forwarder"
+              action="action_forwarder_information"
               parent="menu_tracking_record_master"
               sequence="60"/>
 
@@ -212,12 +162,12 @@
 
     <menuitem id="menu_vehicle_information"
               name="Araçlar"
-              action="fleet.fleet_vehicle_action"
+              action="fleet_vehicle_action"
               parent="menu_fleet_management_master"
               sequence="10"/>
     <menuitem id="menu__rental_vehicle_information"
               name="Kiralık Araçlar"
-              action="fleet.fleet_vehicle_action"
+              action="fleet_vehicle_inherit_action"
               parent="menu_fleet_management_master"
               sequence="20"/>
 

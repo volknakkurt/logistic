@@ -27,6 +27,7 @@
         'views/menu.xml',
         'views/cargo_information_view.xml',
         'views/customs.xml',
+        'views/fleet_vehicle.xml',
     ],
     'demo': [],
     'installable': True,
