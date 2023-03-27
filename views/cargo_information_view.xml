@@ -200,28 +200,9 @@
                         </page>
                         <page string="Acente Bilgisi" name="agency_info"
                               attrs="{'invisible': [('type_of_transport', '!=', 'forwarder')]}">
-                            <field name="agency_information_id">
-                                <tree editable="bottom">
-                                    <field name="name"/>
-                                    <field name="address"/>
-                                    <field name="phone"/>
-                                    <field name="website"/>
-                                    <field name="email"/>
-                                    <field name="business_type"/>
-                                </tree>
-                                <form>
-                                    <group>
-                                        <field name="name"/>
-                                        <field name="address"/>
-                                        <field name="phone"/>
-                                    </group>
-                                    <group>
-                                        <field name="website"/>
-                                        <field name="email"/>
-                                        <field name="business_type"/>
-                                    </group>
-                                </form>
-                            </field>
+                            <group>
+                                <field name="agency_information_id"/>
+                            </group>
                         </page>
                         <page string="Fatura" name="invoice_line_ids">
                             <group>

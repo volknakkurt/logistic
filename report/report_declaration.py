@@ -13,8 +13,12 @@ class CargoDeclarationReport(models.AbstractModel):
     @api.model
     def _get_report_values(self, docids, data=None):
         _logger.info('********************* TEST *************************')
-        model = 'cargo.information.search'
-        docs = self.env[model].browse(self.env.context.get('active_ids', []))
+        model = 'cargo.information'
+        cargo_id = data['file'][1]
+        _logger.info(data['file'][1])
+        _logger.info(data['file'][0])
+
+        docs = self.env[model].browse(cargo_id)
         return {
             'doc_ids': docids,
             'doc_model': model,

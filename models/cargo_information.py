@@ -19,7 +19,7 @@ class CargoInformation(models.Model):
     sender_name_id = fields.Many2one('res.partner', required=True, string='Gönderici Adı')
     recipient_name_id = fields.Many2one('hr.contract', required=True, string='Alıcı Adı')
     customer_representative_id = fields.Many2one('res.partner', string="Müşteri Temsilcisi")
-    agency_information_id = fields.Many2many('agency.information', string="Acente Bilgileri")
+    agency_information_id = fields.Many2one('agency.information', string="Acente Bilgileri")
     vehicle_id = fields.Many2one('fleet.vehicle', string="Araç", domain=[('used_in_fleet', '=', False)])
     towing_plate = fields.Char(string="Araç Çeker Plakası", required=True)
     trailer_plate_id = fields.Many2one('trailer', string="Araç Dorse Plakası")
@@ -131,10 +131,7 @@ class CargoSearch(models.Model):
         data['emp'] = self.env.context.get('active_ids', [])
         track_number = str(data['file'][1])
         _logger.info('*****************************************************************************')
-        _logger.info(str(data))
-        _logger.info(str(data['emp']))
-        _logger.info(track_number)
-        _logger.info(self.env['cargo.information'].browse(data['file']))
+        _logger.info(self.env['cargo.information'].search([('tracking_number', '=', track_number)]))
         datas = {
             'ids': [],
             'model': 'cargo.information.search',
