@@ -1,0 +1,858 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="customs_1" model="customs">
+            <field name="area_name">ORTA ANADOLU GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (ANKARA)</field>
+            <field name="area_code">060000</field>
+            <field name="customs_name">1-Esenboğa Gümrük Müdürlüğü</field>
+            <field name="customs_code">060200</field>
+        </record>
+        <record id="customs_2" model="customs">
+            <field name="area_name">ORTA ANADOLU GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (ANKARA)</field>
+            <field name="area_code">060000</field>
+            <field name="customs_name">2-Konya Gümrük Müdürlüğü</field>
+            <field name="customs_code">060500
+            </field>
+        </record>
+        <record id="customs_3" model="customs">
+            <field name="area_name">ORTA ANADOLU GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (ANKARA)</field>
+            <field name="area_code">060000</field>
+            <field name="customs_name">3-Kayseri Gümrük Müdürlüğü</field>
+            <field name="customs_code">060600</field>
+        </record>
+        <record id="customs_4" model="customs">
+            <field name="area_name">ORTA ANADOLU GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (ANKARA)</field>
+            <field name="area_code">060000</field>
+            <field name="customs_name">4-Ürgüp Gümrük Müdürlüğü</field>
+            <field name="customs_code">060700</field>
+        </record>
+        <record id="customs_5" model="customs">
+            <field name="area_name">ORTA ANADOLU GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (ANKARA)</field>
+            <field name="area_code">060000</field>
+            <field name="customs_name">5-Aksaray Gümrük Müdürlüğü</field>
+            <field name="customs_code">061000</field>
+        </record>
+        <record id="customs_6" model="customs">
+            <field name="area_name">ORTA ANADOLU GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (ANKARA)</field>
+            <field name="area_code">060000</field>
+            <field name="customs_name">6-Ankara Gümrük Müdürlüğü</field>
+            <field name="customs_code">061600</field>
+        </record>
+        <record id="customs_7" model="customs">
+            <field name="area_name">ORTA ANADOLU GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (ANKARA)</field>
+            <field name="area_code">060000</field>
+            <field name="customs_name">7-Ankara Gar Gümrük Müdürlüğü</field>
+            <field name="customs_code">061500</field>
+        </record>
+        <record id="customs_8" model="customs">
+            <field name="area_name">ORTA ANADOLU GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (ANKARA)</field>
+            <field name="area_code">060000</field>
+            <field name="customs_name">8-Karaman Gümrük Müdürlüğü</field>
+            <field name="customs_code">062100</field>
+        </record>
+        <record id="customs_9" model="customs">
+            <field name="area_name">BATI AKDENİZ GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (ANTALYA)</field>
+            <field name="area_code">070000</field>
+            <field name="customs_name">1-Antalya Gümrük Müdürlüğü</field>
+            <field name="customs_code">070100</field>
+        </record>
+        <record id="customs_10" model="customs">
+            <field name="area_name">BATI AKDENİZ GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (ANTALYA)</field>
+            <field name="area_code">070000</field>
+            <field name="customs_name">2-Antalya Havalimanı Gümrük Müdürlüğü</field>
+            <field name="customs_code">070200</field>
+        </record>
+        <record id="customs_11" model="customs">
+            <field name="area_name">BATI AKDENİZ GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (ANTALYA)</field>
+            <field name="area_code">070000</field>
+            <field name="customs_name">3-Antalya Serbest Bölge Gümrük Müdürlüğü</field>
+            <field name="customs_code">070300</field>
+        </record>
+        <record id="customs_12" model="customs">
+            <field name="area_name">BATI AKDENİZ GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (ANTALYA)</field>
+            <field name="area_code">070000</field>
+            <field name="customs_name">4-Alanya Gümrük Müdürlüğü</field>
+            <field name="customs_code">070400</field>
+        </record>
+        <record id="customs_13" model="customs">
+            <field name="area_name">BATI AKDENİZ GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (ANTALYA)</field>
+            <field name="area_code">070000</field>
+            <field name="customs_name">5-Kaş Gümrük Müdürlüğü</field>
+            <field name="customs_code">070500</field>
+        </record>
+        <record id="customs_14" model="customs">
+            <field name="area_name">BATI AKDENİZ GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (ANTALYA)</field>
+            <field name="area_code">070000</field>
+            <field name="customs_name">6-Finike Gümrük Müdürlüğü</field>
+            <field name="customs_code">070600</field>
+        </record>
+        <record id="customs_15" model="customs">
+            <field name="area_name">BATI AKDENİZ GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (ANTALYA)</field>
+            <field name="area_code">070000</field>
+            <field name="customs_name">7-Isparta Gümrük Müdürlüğü</field>
+            <field name="customs_code">070700</field>
+        </record>
+        <record id="customs_16" model="customs">
+            <field name="area_name">BATI AKDENİZ GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (ANTALYA)</field>
+            <field name="area_code">070000</field>
+            <field name="customs_name">8-Dalaman Havalimanı Gümrük Müdürlüğü</field>
+            <field name="customs_code">070800</field>
+        </record>
+        <record id="customs_17" model="customs">
+            <field name="area_name">BATI AKDENİZ GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (ANTALYA)</field>
+            <field name="area_code">070000</field>
+            <field name="customs_name">9-Fethiye Gümrük Müdürlüğü</field>
+            <field name="customs_code">070900</field>
+        </record>
+        <record id="customs_18" model="customs">
+            <field name="area_name">BATI AKDENİZ GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (ANTALYA)</field>
+            <field name="area_code">070000</field>
+            <field name="customs_name">10-Bodrum Gümrük Müdürlüğü</field>
+            <field name="customs_code">071000</field>
+        </record>
+        <record id="customs_19" model="customs">
+            <field name="area_name">BATI AKDENİZ GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (ANTALYA)</field>
+            <field name="area_code">070000</field>
+            <field name="customs_name">11-Datça Gümrük Müdürlüğü</field>
+            <field name="customs_code">071200</field>
+        </record>
+        <record id="customs_20" model="customs">
+            <field name="area_name">BATI AKDENİZ GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (ANTALYA)</field>
+            <field name="area_code">070000</field>
+            <field name="customs_name">12-Milas Havalimanı Gümrük Müdürlüğü</field>
+            <field name="customs_code">071300</field>
+        </record>
+        <record id="customs_21" model="customs">
+            <field name="area_name">BATI AKDENİZ GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (ANTALYA)</field>
+            <field name="area_code">070000</field>
+            <field name="customs_name">13-Marmaris Gümrük Müdürlüğü</field>
+            <field name="customs_code">071400</field>
+        </record>
+        <record id="customs_22" model="customs">
+            <field name="area_name">ULUDAĞ GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (BURSA)</field>
+            <field name="area_code">160000</field>
+            <field name="customs_name">1-Bursa Gümrük Müdürlüğü</field>
+            <field name="customs_code">160100</field>
+        </record>
+        <record id="customs_23" model="customs">
+            <field name="area_name">ULUDAĞ GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (BURSA)</field>
+            <field name="area_code">160000</field>
+            <field name="customs_name">2-Mudanya Gümrük Müdürlüğü</field>
+            <field name="customs_code">160200</field>
+        </record>
+        <record id="customs_24" model="customs">
+            <field name="area_name">ULUDAĞ GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (BURSA)</field>
+            <field name="area_code">160000</field>
+            <field name="customs_name">3-Gemlik Gümrük Müdürlüğü</field>
+            <field name="customs_code">160400</field>
+        </record>
+        <record id="customs_25" model="customs">
+            <field name="area_name">ULUDAĞ GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (BURSA)</field>
+            <field name="area_code">160000</field>
+            <field name="customs_name">4-Bandırma Gümrük Müdürlüğü</field>
+            <field name="customs_code">160600</field>
+        </record>
+        <record id="customs_26" model="customs">
+            <field name="area_name">ULUDAĞ GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (BURSA)</field>
+            <field name="area_code">160000</field>
+            <field name="customs_name">5-Eskişehir Gümrük Müdürlüğü</field>
+            <field name="customs_code">160700</field>
+        </record>
+        <record id="customs_27" model="customs">
+            <field name="area_name">ULUDAĞ GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (BURSA)</field>
+            <field name="area_code">160000</field>
+            <field name="customs_name">6-Yalova Gümrük Müdürlüğü</field>
+            <field name="customs_code">161500</field>
+        </record>
+        <record id="customs_28" model="customs">
+            <field name="area_name">ULUDAĞ GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (BURSA)</field>
+            <field name="area_code">160000</field>
+            <field name="customs_name">7-Ayvalık Gümrük Müdürlüğü</field>
+            <field name="customs_code">161600</field>
+        </record>
+        <record id="customs_29" model="customs">
+            <field name="area_name">ULUDAĞ GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (BURSA)</field>
+            <field name="area_code">160000</field>
+            <field name="customs_name">8-İnegöl Gümrük Müdürlüğü</field>
+            <field name="customs_code">161700</field>
+        </record>
+        <record id="customs_30" model="customs">
+            <field name="area_name">ULUDAĞ GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (BURSA)</field>
+            <field name="area_code">160000</field>
+            <field name="customs_name">9-Kütahya Gümrük Müdürlüğü</field>
+            <field name="customs_code">161900</field>
+        </record>
+        <record id="customs_31" model="customs">
+            <field name="area_name">TRAKYA GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (EDİRNE)</field>
+            <field name="area_code">220000</field>
+            <field name="customs_name">1-Kapıkule Yolcu Salonu Gümrük Müdürlüğü</field>
+            <field name="customs_code">220100</field>
+        </record>
+        <record id="customs_32" model="customs">
+            <field name="area_name">TRAKYA GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (EDİRNE)</field>
+            <field name="area_code">220000</field>
+            <field name="customs_name">2-Kapıkule TIR Gümrük Müdürlüğü</field>
+            <field name="customs_code">220200</field>
+        </record>
+        <record id="customs_33" model="customs">
+            <field name="area_name">TRAKYA GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (EDİRNE)</field>
+            <field name="area_code">220000</field>
+            <field name="customs_name">3-Kapıkule Gar Gümrük Müdürlüğü</field>
+            <field name="customs_code">220400</field>
+        </record>
+        <record id="customs_34" model="customs">
+            <field name="area_name">TRAKYA GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (EDİRNE)</field>
+            <field name="area_code">220000</field>
+            <field name="customs_name">4-İpsala Gümrük Müdürlüğü</field>
+            <field name="customs_code">220500</field>
+        </record>
+        <record id="customs_35" model="customs">
+            <field name="area_name">TRAKYA GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (EDİRNE)</field>
+            <field name="area_code">220000</field>
+            <field name="customs_name">5-Uzunköprü Gümrük Müdürlüğü</field>
+            <field name="customs_code">220600</field>
+        </record>
+        <record id="customs_36" model="customs">
+            <field name="area_name">TRAKYA GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (EDİRNE)</field>
+            <field name="area_code">220000</field>
+            <field name="customs_name">6-Pazarkule Gümrük Müdürlüğü</field>
+            <field name="customs_code">220700</field>
+        </record>
+        <record id="customs_37" model="customs">
+            <field name="area_name">TRAKYA GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (EDİRNE)</field>
+            <field name="area_code">220000</field>
+            <field name="customs_name">7-Dereköy Gümrük Müdürlüğü</field>
+            <field name="customs_code">220800</field>
+        </record>
+        <record id="customs_38" model="customs">
+            <field name="area_name">TRAKYA GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (EDİRNE)</field>
+            <field name="area_code">220000</field>
+            <field name="customs_name">8-Hamzabeyli Gümrük Müdürlüğü</field>
+            <field name="customs_code">220800</field>
+        </record>
+        <record id="customs_40" model="customs">
+            <field name="area_name">GAP GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (GAZİANTEP)</field>
+            <field name="area_code">270000</field>
+            <field name="customs_name">1-Gaziantep Gümrük Müdürlüğü</field>
+            <field name="customs_code">270100</field>
+        </record>
+        <record id="customs_41" model="customs">
+            <field name="area_name">GAP GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (GAZİANTEP)</field>
+            <field name="area_code">270000</field>
+            <field name="customs_name">2-Islahiye Gümrük Müdürlüğü</field>
+            <field name="customs_code">270200</field>
+        </record>
+        <record id="customs_42" model="customs">
+            <field name="area_name">GAP GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (GAZİANTEP)</field>
+            <field name="area_code">270000</field>
+            <field name="customs_name">3-Öncüpınar Gümrük Müdürlüğü</field>
+            <field name="customs_code">270300</field>
+        </record>
+        <record id="customs_43" model="customs">
+            <field name="area_name">GAP GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (GAZİANTEP)</field>
+            <field name="area_code">270000</field>
+            <field name="customs_name">4-Çobanbey Gümrük Müdürlüğü</field>
+            <field name="customs_code">270400</field>
+        </record>
+        <record id="customs_44" model="customs">
+            <field name="area_name">GAP GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (GAZİANTEP)</field>
+            <field name="area_code">270000</field>
+            <field name="customs_name">5-Akçakale Gümrük Müdürlüğü</field>
+            <field name="customs_code">270600</field>
+        </record>
+        <record id="customs_45" model="customs">
+            <field name="area_name">GAP GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (GAZİANTEP)</field>
+            <field name="area_code">270000</field>
+            <field name="customs_name">6-Şanlıurfa Gümrük Müdürlüğü</field>
+            <field name="customs_code">270900</field>
+        </record>
+        <record id="customs_46" model="customs">
+            <field name="area_name">GAP GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (GAZİANTEP)</field>
+            <field name="area_code">270000</field>
+            <field name="customs_name">7-Karkamış Gümrük Müdürlüğü</field>
+            <field name="customs_code">271000</field>
+        </record>
+        <record id="customs_47" model="customs">
+            <field name="area_name">GAP GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (GAZİANTEP)</field>
+            <field name="area_code">270000</field>
+            <field name="customs_name">8-Gaziantep Havalimanı Gümrük Müdürlüğü</field>
+            <field name="customs_code">271100</field>
+        </record>
+        <record id="customs_48" model="customs">
+            <field name="area_name">DOĞU ANADOLU GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (VAN)</field>
+            <field name="area_code">650000</field>
+            <field name="customs_name">1-Van Gümrük Müdürlüğü</field>
+            <field name="customs_code">650800</field>
+        </record>
+        <record id="customs_49" model="customs">
+            <field name="area_name">DOĞU ANADOLU GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (VAN)</field>
+            <field name="area_code">650000</field>
+            <field name="customs_name">2-Esendere Gümrük Müdürlüğü</field>
+            <field name="customs_code">650900</field>
+        </record>
+        <record id="customs_50" model="customs">
+            <field name="area_name">DOĞU ANADOLU GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (VAN)</field>
+            <field name="area_code">650000</field>
+            <field name="customs_name">3-Kapıköy Gümrük Müdürlüğü</field>
+            <field name="customs_code">651000</field>
+        </record>
+        <record id="customs_51" model="customs">
+            <field name="area_name">DOĞU ANADOLU GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (VAN)</field>
+            <field name="area_code">650000</field>
+            <field name="customs_name">4-Üzümlü Gümrük Müdürlüğü</field>
+            <field name="customs_code">651500</field>
+        </record>
+        <record id="customs_52" model="customs">
+            <field name="area_name">İPEKYOLU GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (DİYARBAKIR)</field>
+            <field name="area_code">210000</field>
+            <field name="customs_name">1-Diyarbakır Gümrük Müdürlüğü</field>
+            <field name="customs_code">210100</field>
+        </record>
+        <record id="customs_53" model="customs">
+            <field name="area_name">İPEKYOLU GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (DİYARBAKIR)</field>
+            <field name="area_code">210000</field>
+            <field name="customs_name">2-Mardin Gümrük Müdürlüğü</field>
+            <field name="customs_code">210200</field>
+        </record>
+        <record id="customs_54" model="customs">
+            <field name="area_name">İPEKYOLU GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (DİYARBAKIR)</field>
+            <field name="area_code">210000</field>
+            <field name="customs_name">3-Nusaybin Gümrük Müdürlüğü</field>
+            <field name="customs_code">210300</field>
+        </record>
+        <record id="customs_55" model="customs">
+            <field name="area_name">İPEKYOLU GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (DİYARBAKIR)</field>
+            <field name="area_code">210000</field>
+            <field name="customs_name">4-Habur Gümrük Müdürlüğü</field>
+            <field name="customs_code">210400</field>
+        </record>
+        <record id="customs_56" model="customs">
+            <field name="area_name">İPEKYOLU GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (DİYARBAKIR)</field>
+            <field name="area_code">210000</field>
+            <field name="customs_name">5-Batman Gümrük Müdürlüğü</field>
+            <field name="customs_code">210500</field>
+        </record>
+        <record id="customs_57" model="customs">
+            <field name="area_name">İPEKYOLU GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (DİYARBAKIR)</field>
+            <field name="area_code">210000</field>
+            <field name="customs_name">6-İpekyolu Gümrük Müdürlüğü</field>
+            <field name="customs_code">210600</field>
+        </record>
+        <record id="customs_58" model="customs">
+            <field name="area_name">DOĞU AKDENİZ GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (HATAY / İSKENDERUN)</field>
+            <field name="area_code">310000</field>
+            <field name="customs_name">1-İskenderun Gümrük Müdürlüğü</field>
+            <field name="customs_code">310100</field>
+        </record>
+        <record id="customs_59" model="customs">
+            <field name="area_name">DOĞU AKDENİZ GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (HATAY / İSKENDERUN)</field>
+            <field name="area_code">310000</field>
+            <field name="customs_name">2-Cilvegözü Gümrük Müdürlüğü</field>
+            <field name="customs_code">310400</field>
+        </record>
+        <record id="customs_60" model="customs">
+            <field name="area_name">DOĞU AKDENİZ GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (HATAY / İSKENDERUN)</field>
+            <field name="area_code">310000</field>
+            <field name="customs_name">3-Yayladağı Gümrük Müdürlüğü</field>
+            <field name="customs_code">310500</field>
+        </record>
+        <record id="customs_61" model="customs">
+            <field name="area_name">DOĞU AKDENİZ GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (HATAY / İSKENDERUN)</field>
+            <field name="area_code">310000</field>
+            <field name="customs_name">4-İsdemir Gümrük Müdürlüğü</field>
+            <field name="customs_code">310600</field>
+        </record>
+        <record id="customs_62" model="customs">
+            <field name="area_name">DOĞU AKDENİZ GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (HATAY / İSKENDERUN)</field>
+            <field name="area_code">310000</field>
+            <field name="customs_name">5-Antakya Gümrük Müdürlüğü</field>
+            <field name="customs_code">310800</field>
+        </record>
+        <record id="customs_63" model="customs">
+            <field name="area_name">İSTANBUL GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (İSTANBUL)</field>
+            <field name="area_code">340000</field>
+            <field name="customs_name">1-Atatürk Havalimanı Yolcu Salonu Gümrük Müdürlüğü</field>
+            <field name="customs_code">340100</field>
+        </record>
+        <record id="customs_64" model="customs">
+            <field name="area_name">İSTANBUL GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (İSTANBUL)</field>
+            <field name="area_code">340000</field>
+            <field name="customs_name">2-Atatürk Havalimanı Kargo Gümrük Müdürlüğü</field>
+            <field name="customs_code">340300</field>
+        </record>
+        <record id="customs_65" model="customs">
+            <field name="area_name">İSTANBUL GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (İSTANBUL)</field>
+            <field name="area_code">340000</field>
+            <field name="customs_name">3-İstanbul Posta Gümrük Müdürlüğü</field>
+            <field name="customs_code">340600</field>
+        </record>
+        <record id="customs_66" model="customs">
+            <field name="area_name">İSTANBUL GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (İSTANBUL)</field>
+            <field name="area_code">340000</field>
+            <field name="customs_name">4-Beylikdüzü Akaryakıt Gümrük Müdürlüğü</field>
+            <field name="customs_code">340700</field>
+        </record>
+        <record id="customs_67" model="customs">
+            <field name="area_name">İSTANBUL GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (İSTANBUL)</field>
+            <field name="area_code">340000</field>
+            <field name="customs_name">5-Karaköy Yolcu Salonu Gümrük Müdürlüğü</field>
+            <field name="customs_code">340800</field>
+        </record>
+        <record id="customs_68" model="customs">
+            <field name="area_name">İSTANBUL GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (İSTANBUL)</field>
+            <field name="area_code">340000</field>
+            <field name="customs_name">6-Haydarpaşa Gümrük Müdürlüğü</field>
+            <field name="customs_code">340900</field>
+        </record>
+        <record id="customs_69" model="customs">
+            <field name="area_name">İSTANBUL GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (İSTANBUL)</field>
+            <field name="area_code">340000</field>
+            <field name="customs_name">7-Erenköy Gümrük Müdürlüğü</field>
+            <field name="customs_code">341200</field>
+        </record>
+        <record id="customs_70" model="customs">
+            <field name="area_name">İSTANBUL GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (İSTANBUL)</field>
+            <field name="area_code">340000</field>
+            <field name="customs_name">8-Halkalı Gümrük Müdürlüğü</field>
+            <field name="customs_code">341300</field>
+        </record>
+        <record id="customs_71" model="customs">
+            <field name="area_name">İSTANBUL GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (İSTANBUL)</field>
+            <field name="area_code">340000</field>
+            <field name="customs_name">9-Trakya Serbest Bölge Gümrük Müdürlüğü</field>
+            <field name="customs_code">342000</field>
+        </record>
+        <record id="customs_72" model="customs">
+            <field name="area_name">İSTANBUL GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (İSTANBUL)</field>
+            <field name="area_code">340000</field>
+            <field name="customs_name">10-İstanbul Deri Serbest Bölge Gümrük Müdürlüğü</field>
+            <field name="customs_code">342200</field>
+        </record>
+        <record id="customs_73" model="customs">
+            <field name="area_name">İSTANBUL GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (İSTANBUL)</field>
+            <field name="area_code">340000</field>
+            <field name="customs_name">11-Yeşilköy Gümrük Müdürlüğü</field>
+            <field name="customs_code">342400</field>
+        </record>
+        <record id="customs_74" model="customs">
+            <field name="area_name">İSTANBUL GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (İSTANBUL)</field>
+            <field name="area_code">340000</field>
+            <field name="customs_name">12-Atatürk Havalimanı Serbest Bölge Gümrük Müdürlüğü</field>
+            <field name="customs_code">342800</field>
+        </record>
+        <record id="customs_75" model="customs">
+            <field name="area_name">İSTANBUL GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (İSTANBUL)</field>
+            <field name="area_code">340000</field>
+            <field name="customs_name">13-Ambarlı Gümrük Müdürlüğü</field>
+            <field name="customs_code">343100</field>
+        </record>
+        <record id="customs_76" model="customs">
+            <field name="area_name">İSTANBUL GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (İSTANBUL)</field>
+            <field name="area_code">340000</field>
+            <field name="customs_name">14-Sabiha Gökçen Havalimanı Gümrük Müdürlüğü</field>
+            <field name="customs_code">343200</field>
+        </record>
+        <record id="customs_77" model="customs">
+            <field name="area_name">İSTANBUL GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (İSTANBUL)</field>
+            <field name="area_code">340000</field>
+            <field name="customs_name">15-Zeytinburnu Gümrük Müdürlüğü</field>
+            <field name="customs_code">343300</field>
+        </record>
+        <record id="customs_78" model="customs">
+            <field name="area_name">İSTANBUL GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (İSTANBUL)</field>
+            <field name="area_code">340000</field>
+            <field name="customs_name">16-Pendik Gümrük Müdürlüğü</field>
+            <field name="customs_code">343400</field>
+        </record>
+        <record id="customs_79" model="customs">
+            <field name="area_name">EGE GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (İZMİR)</field>
+            <field name="area_code">350000</field>
+            <field name="customs_name">1-İzmir Gümrük Müdürlüğü</field>
+            <field name="customs_code">350300</field>
+        </record>
+        <record id="customs_80" model="customs">
+            <field name="area_name">EGE GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (İZMİR)</field>
+            <field name="area_code">350000</field>
+            <field name="customs_name">2-İzmir Yolcu Salonu Gümrük Müdürlüğü</field>
+            <field name="customs_code">350500</field>
+        </record>
+        <record id="customs_81" model="customs">
+            <field name="area_name">EGE GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (İZMİR)</field>
+            <field name="area_code">350000</field>
+            <field name="customs_name">3-Adnan Menderes Gümrük Müdürlüğü</field>
+            <field name="customs_code">350700</field>
+        </record>
+        <record id="customs_82" model="customs">
+            <field name="area_name">EGE GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (İZMİR)</field>
+            <field name="area_code">350000</field>
+            <field name="customs_name">4-Dikili Gümrük Müdürlüğü</field>
+            <field name="customs_code">350900</field>
+        </record>
+        <record id="customs_83" model="customs">
+            <field name="area_name">EGE GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (İZMİR)</field>
+            <field name="area_code">350000</field>
+            <field name="customs_name">5-Çeşme Gümrük Müdürlüğü</field>
+            <field name="customs_code">351000</field>
+        </record>
+        <record id="customs_84" model="customs">
+            <field name="area_name">EGE GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (İZMİR)</field>
+            <field name="area_code">350000</field>
+            <field name="customs_name">6-Foça Gümrük Müdürlüğü</field>
+            <field name="customs_code">351100</field>
+        </record>
+        <record id="customs_85" model="customs">
+            <field name="area_name">EGE GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (İZMİR)</field>
+            <field name="area_code">350000</field>
+            <field name="customs_name">7-Manisa Gümrük Müdürlüğü</field>
+            <field name="customs_code">351700</field>
+        </record>
+        <record id="customs_86" model="customs">
+            <field name="area_name">EGE GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (İZMİR)</field>
+            <field name="area_code">350000</field>
+            <field name="customs_name">8-Kuşadası Gümrük Müdürlüğü</field>
+            <field name="customs_code">351800</field>
+        </record>
+        <record id="customs_87" model="customs">
+            <field name="area_name">EGE GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (İZMİR)</field>
+            <field name="area_code">350000</field>
+            <field name="customs_name">9-Aliağa Gümrük Müdürlüğü</field>
+            <field name="customs_code">351900</field>
+        </record>
+        <record id="customs_88" model="customs">
+            <field name="area_name">EGE GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (İZMİR)</field>
+            <field name="area_code">350000</field>
+            <field name="customs_name">10-Denizli Gümrük Müdürlüğü</field>
+            <field name="customs_code">352100</field>
+        </record>
+        <record id="customs_89" model="customs">
+            <field name="area_name">EGE GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (İZMİR)</field>
+            <field name="area_code">350000</field>
+            <field name="customs_name">11-Ege Serbest Bölge Gümrük Müdürlüğü</field>
+            <field name="customs_code">352200</field>
+        </record>
+        <record id="customs_90" model="customs">
+            <field name="area_name">EGE GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (İZMİR)</field>
+            <field name="area_code">350000</field>
+            <field name="customs_name">12-Uşak Gümrük Müdürlüğü</field>
+            <field name="customs_code">352800</field>
+        </record>
+        <record id="customs_91" model="customs">
+            <field name="area_name">EGE GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (İZMİR)</field>
+            <field name="area_code">350000</field>
+            <field name="customs_name">13-Afyonkarahisar Gümrük Müdürlüğü</field>
+            <field name="customs_code">352900</field>
+        </record>
+        <record id="customs_92" model="customs">
+            <field name="area_name">EGE GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (İZMİR)</field>
+            <field name="area_code">350000</field>
+            <field name="customs_name">14-İzmir Serbest Bölge Gümrük Müdürlüğü</field>
+            <field name="customs_code">353100</field>
+        </record>
+        <record id="customs_93" model="customs">
+            <field name="area_name">EGE GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (İZMİR)</field>
+            <field name="area_code">350000</field>
+            <field name="customs_name">15-İzmir TIR Gümrük Müdürlüğü</field>
+            <field name="customs_code">353200</field>
+        </record>
+        <record id="customs_94" model="customs">
+            <field name="area_name">EGE GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (İZMİR)</field>
+            <field name="area_code">350000</field>
+            <field name="customs_name">16-Alaşehir Gümrük Müdürlüğü</field>
+            <field name="customs_code">353300</field>
+        </record>
+        <record id="customs_95" model="customs">
+            <field name="area_name">EGE GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (İZMİR)</field>
+            <field name="area_code">350000</field>
+            <field name="customs_name">17-Aydın Gümrük Müdürlüğü</field>
+            <field name="customs_code">353400</field>
+        </record>
+        <record id="customs_96" model="customs">
+            <field name="area_name">DOĞU MARMARA GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (KOCAELİ)</field>
+            <field name="area_code">410000</field>
+            <field name="customs_name">1-İzmit Gümrük Müdürlüğü</field>
+            <field name="customs_code">410100</field>
+        </record>
+        <record id="customs_97" model="customs">
+            <field name="area_name">DOĞU MARMARA GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (KOCAELİ)</field>
+            <field name="area_code">410000</field>
+            <field name="customs_name">2-Derince Gümrük Müdürlüğü</field>
+            <field name="customs_code">410300</field>
+        </record>
+        <record id="customs_98" model="customs">
+            <field name="area_name">DOĞU MARMARA GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (KOCAELİ)</field>
+            <field name="area_code">410000</field>
+            <field name="customs_name">3-Dilovası Gümrük Müdürlüğü</field>
+            <field name="customs_code">410500</field>
+        </record>
+        <record id="customs_99" model="customs">
+            <field name="area_name">DOĞU MARMARA GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (KOCAELİ)</field>
+            <field name="area_code">410000</field>
+            <field name="customs_name">4-Sakarya Gümrük Müdürlüğü</field>
+            <field name="customs_code">410700</field>
+        </record>
+        <record id="customs_100" model="customs">
+            <field name="area_name">DOĞU MARMARA GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (KOCAELİ)</field>
+            <field name="area_code">410000</field>
+            <field name="customs_name">5-Gebze Gümrük Müdürlüğü</field>
+            <field name="customs_code">411300</field>
+        </record>
+        <record id="customs_101" model="customs">
+            <field name="area_name">DOĞU MARMARA GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (KOCAELİ)</field>
+            <field name="area_code">410000</field>
+            <field name="customs_name">6-Körfez Petrokimya Gümrük Müdürlüğü</field>
+            <field name="customs_code">411400</field>
+        </record>
+        <record id="customs_102" model="customs">
+            <field name="area_name">DOĞU MARMARA GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (KOCAELİ)</field>
+            <field name="area_code">410000</field>
+            <field name="customs_name">7-Karadeniz Ereğli Gümrük Müdürlüğü</field>
+            <field name="customs_code">411500</field>
+        </record>
+        <record id="customs_103" model="customs">
+            <field name="area_name">DOĞU MARMARA GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (KOCAELİ)</field>
+            <field name="area_code">410000</field>
+            <field name="customs_name">8-Zonguldak Gümrük Müdürlüğü</field>
+            <field name="customs_code">411600</field>
+        </record>
+        <record id="customs_104" model="customs">
+            <field name="area_name">DOĞU MARMARA GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (KOCAELİ)</field>
+            <field name="area_code">410000</field>
+            <field name="customs_name">9-Karabük Gümrük Müdürlüğü</field>
+            <field name="customs_code">411700</field>
+        </record>
+        <record id="customs_105" model="customs">
+            <field name="area_name">DOĞU MARMARA GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (KOCAELİ)</field>
+            <field name="area_code">410000</field>
+            <field name="customs_name">10-Bartın Gümrük Müdürlüğü</field>
+            <field name="customs_code">411800</field>
+        </record>
+        <record id="customs_106" model="customs">
+            <field name="area_name">DOĞU MARMARA GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (KOCAELİ)</field>
+            <field name="area_code">410000</field>
+            <field name="customs_name">11-Bolu Gümrük Müdürlüğü</field>
+            <field name="customs_code">411900</field>
+        </record>
+        <record id="customs_107" model="customs">
+            <field name="area_name">FIRAT GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (MALATYA)</field>
+            <field name="area_code">440000</field>
+            <field name="customs_name">1-Malatya Gümrük Müdürlüğü</field>
+            <field name="customs_code">440100</field>
+        </record>
+        <record id="customs_108" model="customs">
+            <field name="area_name">FIRAT GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (MALATYA)</field>
+            <field name="area_code">440000</field>
+            <field name="customs_name">2-Kahramanmaraş Gümrük Müdürlüğü</field>
+            <field name="customs_code">440200</field>
+        </record>
+        <record id="customs_109" model="customs">
+            <field name="area_name">FIRAT GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (MALATYA)</field>
+            <field name="area_code">440000</field>
+            <field name="customs_name">3-Elazığ Gümrük Müdürlüğü</field>
+            <field name="customs_code">440300</field>
+        </record>
+        <record id="customs_110" model="customs">
+            <field name="area_name">FIRAT GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (MALATYA)</field>
+            <field name="area_code">440000</field>
+            <field name="customs_name">4-Sivas Gümrük Müdürlüğü</field>
+            <field name="customs_code">440400</field>
+        </record>
+        <record id="customs_112" model="customs">
+            <field name="area_name">ORTA AKDENİZ GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (MERSİN)</field>
+            <field name="area_code">330000</field>
+            <field name="customs_name">1-Mersin Gümrük Müdürlüğü</field>
+            <field name="customs_code">330100</field>
+        </record>
+        <record id="customs_113" model="customs">
+            <field name="area_name">ORTA AKDENİZ GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (MERSİN)</field>
+            <field name="area_code">330000</field>
+            <field name="customs_name">2-Mersin Yolcu Salonu Gümrük Müdürlüğü</field>
+            <field name="customs_code">330300</field>
+        </record>
+        <record id="customs_114" model="customs">
+            <field name="area_name">ORTA AKDENİZ GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (MERSİN)</field>
+            <field name="area_code">330000</field>
+            <field name="customs_name">3-Mersin Serbest Bölge Gümrük Müdürlüğü</field>
+            <field name="customs_code">330500</field>
+        </record>
+        <record id="customs_115" model="customs">
+            <field name="area_name">ORTA AKDENİZ GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (MERSİN)</field>
+            <field name="area_code">330000</field>
+            <field name="customs_name">4-Mersin Akaryakıt Gümrük Müdürlüğü</field>
+            <field name="customs_code">330600</field>
+        </record>
+        <record id="customs_116" model="customs">
+            <field name="area_name">ORTA AKDENİZ GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (MERSİN)</field>
+            <field name="area_code">330000</field>
+            <field name="customs_name">5-Taşucu Gümrük Müdürlüğü</field>
+            <field name="customs_code">330700</field>
+        </record>
+        <record id="customs_117" model="customs">
+            <field name="area_name">ORTA AKDENİZ GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (MERSİN)</field>
+            <field name="area_code">330000</field>
+            <field name="customs_name">6-Adana Gümrük Müdürlüğü</field>
+            <field name="customs_code">330900</field>
+        </record>
+        <record id="customs_118" model="customs">
+            <field name="area_name">ORTA AKDENİZ GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (MERSİN)</field>
+            <field name="area_code">330000</field>
+            <field name="customs_name">7-İncirlik Gümrük Müdürlüğü</field>
+            <field name="customs_code">331000</field>
+        </record>
+        <record id="customs_119" model="customs">
+            <field name="area_name">ORTA AKDENİZ GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (MERSİN)</field>
+            <field name="area_code">330000</field>
+            <field name="customs_name">8-Botaş Gümrük Müdürlüğü</field>
+            <field name="customs_code">331400</field>
+        </record>
+        <record id="customs_120" model="customs">
+            <field name="area_name">ORTA AKDENİZ GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (MERSİN)</field>
+            <field name="area_code">330000</field>
+            <field name="customs_name">9-Yumurtalık Serbest Bölge Güm. Müdürlüğü</field>
+            <field name="customs_code">331500</field>
+        </record>
+        <record id="customs_121" model="customs">
+            <field name="area_name">ORTA AKDENİZ GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (MERSİN)</field>
+            <field name="area_code">330000</field>
+            <field name="customs_name">10-Niğde Gümrük Müdürlüğü</field>
+            <field name="customs_code">331600</field>
+        </record>
+        <record id="customs_122" model="customs">
+            <field name="area_name">ORTA KARADENİZ GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (SAMSUN)</field>
+            <field name="area_code">550000</field>
+            <field name="customs_name">1-Samsun Gümrük Müdürlüğü</field>
+            <field name="customs_code">550100</field>
+        </record>
+        <record id="customs_123" model="customs">
+            <field name="area_name">ORTA KARADENİZ GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (SAMSUN)</field>
+            <field name="area_code">550000</field>
+            <field name="customs_name">2-Ordu Gümrük Müdürlüğü</field>
+            <field name="customs_code">550200</field>
+        </record>
+        <record id="customs_124" model="customs">
+            <field name="area_name">ORTA KARADENİZ GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (SAMSUN)</field>
+            <field name="area_code">550000</field>
+            <field name="customs_name">3-Ünye Gümrük Müdürlüğü</field>
+            <field name="customs_code">550300</field>
+        </record>
+        <record id="customs_125" model="customs">
+            <field name="area_name">ORTA KARADENİZ GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (SAMSUN)</field>
+            <field name="area_code">550000</field>
+            <field name="customs_name">4-Çorum Gümrük Müdürlüğü</field>
+            <field name="customs_code">550700</field>
+        </record>
+        <record id="customs_126" model="customs">
+            <field name="area_name">ORTA KARADENİZ GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (SAMSUN)</field>
+            <field name="area_code">550000</field>
+            <field name="customs_name">5-İnebolu Gümrük Müdürlüğü</field>
+            <field name="customs_code">551100</field>
+        </record>
+        <record id="customs_127" model="customs">
+            <field name="area_name">DOĞU KARADENİZ GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (TRABZON)</field>
+            <field name="area_code">610000</field>
+            <field name="customs_name">1-Trabzon Gümrük Müdürlüğü</field>
+            <field name="customs_code">610100</field>
+        </record>
+        <record id="customs_128" model="customs">
+            <field name="area_name">DOĞU KARADENİZ GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (TRABZON)</field>
+            <field name="area_code">610000</field>
+            <field name="customs_name">2-Rize Gümrük Müdürlüğü </field>
+            <field name="customs_code">610200</field>
+        </record>
+        <record id="customs_129" model="customs">
+            <field name="area_name">DOĞU KARADENİZ GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (TRABZON)</field>
+            <field name="area_code">610000</field>
+            <field name="customs_name">3-Hopa Gümrük Müdürlüğü </field>
+            <field name="customs_code">610300</field>
+        </record>
+        <record id="customs_130" model="customs">
+            <field name="area_name">DOĞU KARADENİZ GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (TRABZON)</field>
+            <field name="area_code">610000</field>
+            <field name="customs_name">4-Giresun Gümrük Müdürlüğü</field>
+            <field name="customs_code">610400</field>
+        </record>
+        <record id="customs_131" model="customs">
+            <field name="area_name">DOĞU KARADENİZ GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (TRABZON)</field>
+            <field name="area_code">610000</field>
+            <field name="customs_name">5-Sarp Gümrük Müdürlüğü </field>
+            <field name="customs_code">611500</field>
+        </record>
+        <record id="customs_132" model="customs">
+            <field name="area_name">BATI MARMARA GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (TEKİRDAĞ) </field>
+            <field name="area_code">590000</field>
+            <field name="customs_name">1-Tekirdağ Gümrük Müdürlüğü</field>
+            <field name="customs_code">590100</field>
+        </record>
+        <record id="customs_133" model="customs">
+            <field name="area_name">BATI MARMARA GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (TEKİRDAĞ) </field>
+            <field name="area_code">590000</field>
+            <field name="customs_name">2-Çorlu Havalimanı Gümrük Müdürlüğü</field>
+            <field name="customs_code">590200</field>
+        </record>
+        <record id="customs_134" model="customs">
+            <field name="area_name">BATI MARMARA GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (TEKİRDAĞ) </field>
+            <field name="area_code">590000</field>
+            <field name="customs_name">3-Avrupa Serbest Bölge Gümrük Müdürlüğü</field>
+            <field name="customs_code">590300</field>
+        </record>
+        <record id="customs_135" model="customs">
+            <field name="area_name">BATI MARMARA GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (TEKİRDAĞ) </field>
+            <field name="area_code">590000</field>
+            <field name="customs_name">4-Çerkezköy Gümrük Müdürlüğü</field>
+            <field name="customs_code">590400</field>
+        </record>
+        <record id="customs_136" model="customs">
+            <field name="area_name">BATI MARMARA GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (TEKİRDAĞ) </field>
+            <field name="area_code">590000</field>
+            <field name="customs_name">5-Çanakkale Gümrük Müdürlüğü</field>
+            <field name="customs_code">590500</field>
+        </record>
+        <record id="customs_137" model="customs">
+            <field name="area_name">BATI MARMARA GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (TEKİRDAĞ) </field>
+            <field name="area_code">590000</field>
+            <field name="customs_name">6-Biga Gümrük Müdürlüğü</field>
+            <field name="customs_code">590800</field>
+        </record>
+        <record id="customs_138" model="customs">
+            <field name="area_name">GÜRBULAK GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (GÜRBULAK)</field>
+            <field name="area_code">040001</field>
+            <field name="customs_name">1-Doğubeyazıt Gümrük Müdürlüğü</field>
+            <field name="customs_code">041500</field>
+        </record>
+        <record id="customs_139" model="customs">
+            <field name="area_name">GÜRBULAK GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (GÜRBULAK)</field>
+            <field name="area_code">040001</field>
+            <field name="customs_name">2-Gürbulak Gümrük Müdürlüğü </field>
+            <field name="customs_code">041600</field>
+        </record>
+        <record id="customs_140" model="customs">
+            <field name="area_name">GÜRBULAK GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (GÜRBULAK)</field>
+            <field name="area_code">040001</field>
+            <field name="customs_name">3-Erzurum Gümrük Müdürlüğü </field>
+            <field name="customs_code">041700</field>
+        </record>
+        <record id="customs_141" model="customs">
+            <field name="area_name">GÜRBULAK GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (GÜRBULAK)</field>
+            <field name="area_code">040001</field>
+            <field name="customs_name">4-Dilucu Gümrük Müdürlüğü</field>
+            <field name="customs_code">041800</field>
+        </record>
+        <record id="customs_142" model="customs">
+            <field name="area_name">GÜRBULAK GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (GÜRBULAK)</field>
+            <field name="area_code">040001</field>
+            <field name="customs_name">5-Kars Gümrük Müdürlüğü </field>
+            <field name="customs_code">041900</field>
+        </record>
+        <record id="customs_138" model="customs">
+            <field name="area_name">GÜRBULAK GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (GÜRBULAK)</field>
+            <field name="area_code">040001</field>
+            <field name="customs_name">6-Iğdır Gümrük Müdürlüğü</field>
+            <field name="customs_code">042200</field>
+        </record>
+        <record id="customs_143" model="customs">
+            <field name="area_name">GÜRBULAK GÜMRÜK VE TİCARET BÖLGE MÜDÜRLÜĞÜ (GÜRBULAK)</field>
+            <field name="area_code">040001</field>
+            <field name="customs_name">7-Türkgözü Gümrük Müdürlüğü </field>
+            <field name="customs_code">651100</field>
+        </record>
+    </data>
+</odoo>

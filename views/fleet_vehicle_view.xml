@@ -1,0 +1,38 @@
+<odoo>
+    <record id="logistic_fleet_vehicle_view_form" model="ir.ui.view">
+        <field name="name">logistic.fleet.vehicle.view.form</field>
+        <field name="model">fleet.vehicle</field>
+        <field name="inherit_id" ref="fleet.fleet_vehicle_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='horsepower_tax']" position="after">
+                <field name="visa_expiry_date" string="Vize Bitiş Tarihi"/>
+                <field name="insurance_expiry_date" string="Sigorta Bitiş Tarihi"/>
+                <field name="is_expired_soon" invisible="1"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="logistic_fleet_vehicle_view_tree" model="ir.ui.view">
+        <field name="name">logistic.fleet.vehicle.view.tree</field>
+        <field name="model">fleet.vehicle</field>
+        <field name="inherit_id" ref="fleet.fleet_vehicle_view_tree"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='tag_ids']" position="before">
+                <field name="warning_message" widget="warning" options='{"mode": "dismissible"}'/>
+                <field name="is_expired_soon" invisible="1"/>
+            </xpath>
+        </field>
+    </record>
+    <record id="logistic_fleet_vehicle_view_search" model="ir.ui.view">
+        <field name="name">logistic.fleet.vehicle.view.search</field>
+        <field name="model">fleet.vehicle</field>
+        <field name="inherit_id" ref="fleet.fleet_vehicle_view_search"/>
+        <field name="arch" type="xml">
+            <xpath expr="//search/group" position="after">
+                <searchpanel>
+                    <field name="state_id"/>
+                </searchpanel>
+            </xpath>
+        </field>
+    </record>
+</odoo>

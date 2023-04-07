@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="logistic_trailer_view_tree" model="ir.ui.view">
+        <field name="name">logistic.trailer.view.tree</field>
+        <field name="model">trailer</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="trailer_plate"/>
+                <field name="dorse_turu"/>
+                <field name="capacity"/>
+                <field name="volume"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="logistic_trailer_view_search" model="ir.ui.view">
+        <field name="name">logistic.trailer.view.search</field>
+        <field name="model">trailer</field>
+        <field name="arch" type="xml">
+            <search>
+                <searchpanel>
+                    <field name="dorse_turu"/>
+                </searchpanel>
+            </search>
+        </field>
+    </record>
+
+    <record id="logistic_trailer_view_form" model="ir.ui.view">
+        <field name="name">logistic.trailer.view.form</field>
+        <field name="model">trailer</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+
+                </header>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="trailer_plate"/>
+                            <field name="dorse_turu"/>
+                            <field name="dorse_alt_kategori"/>
+                            <field name="capacity"/>
+                        </group>
+                        <group>
+                            <field name="length"/>
+                            <field name="width"/>
+                            <field name="height"/>
+                            <field name="volume"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>

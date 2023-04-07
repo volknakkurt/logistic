@@ -9,3 +9,5 @@ class ProductInherit(models.Model):
     _inherit = 'product.template'
 
     case = fields.Integer(string="Kap Miktarı")
+    description = fields.Char(string="Açıklama")
+    type = fields.Char(string="Ürün Tipi")

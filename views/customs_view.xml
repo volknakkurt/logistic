@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_out_customs_tree" model="ir.ui.view">
+        <field name="name">customs.tree</field>
+        <field name="model">customs</field>
+        <field name="arch" type="xml">
+            <tree sample="1">
+                <field name="area_name"/>
+                <field name="area_code"/>
+                <field name="customs_name"/>
+                <field name="customs_code"/>
+                <field name="is_abroad" widget="boolean_toggle"/>
+            </tree>
+        </field>
+    </record>
+    <record id="view_out_customs_form" model="ir.ui.view">
+        <field name="name">customs.form</field>
+        <field name="model">customs</field>
+        <field name="arch" type="xml">
+            <form sample="1">
+                <sheet>
+                    <div>
+                        <field name="is_abroad" string="Yurtdışı" widget="boolean_toggle"/>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="area_name"/>
+                            <field name="area_code"/>
+                        </group>
+                        <group>
+                            <field name="customs_name"/>
+                            <field name="customs_code"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>

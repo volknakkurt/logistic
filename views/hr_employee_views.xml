@@ -1,0 +1,20 @@
+<odoo>
+    <record id="logistic_hr_employee_view_form" model="ir.ui.view">
+        <field name="name">logistic.hr.employee.view.form</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.view_employee_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[hasclass('oe_button_box')]" position="inside">
+                <button name="%(om_logistic.act_hr_employee_cargo_information_list)d" class="oe_stat_button"
+                        icon="fa-list-ul" type="action" string="Sefer Bilgileri"
+                        attrs="{'invisible': [('department_id', '!=', 6)]}">
+                </button>
+                <button name="action_get_attachment_view" class="oe_stat_button" icon="fa-file-text-o"
+                        type="object">
+                    <field name="attachment_number" widget="statinfo" string="Attachments"
+                           options="{'reload_on_button': true}"/>
+                </button>
+            </xpath>
+        </field>
+    </record>
+</odoo>
